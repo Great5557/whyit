@@ -1,0 +1,497 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');*/
+/*Выше, это импорт шрифта с сайта fonts.google.com, там надо нажать плюс и import. Далее надо скопировать CSS rules to specify families и вставить в этот файл в боди*/
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Comfortaa&family=Dancing+Script&family=Patrick+Hand&family=Playfair+Display:wght@500&family=Roboto+Slab:wght@300&display=swap');
+
+
+
+
+/*
+* { Обращение ко ВСЕМ элементам
+padding: 0;
+margin: 0;  
+
+} 
+
+*/
+body{
+    background-color: #f1f0e7; /*цвет фона*/
+color: #B22222; /*цвет текста*/
+
+font-size: 16px; /*Размер ВСЕХ символов в бади*/
+font-weight: 600; 
+/* это жирность шрифта вместо цифры можно написать normal или bold - ;bhysq*/
+
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* это стиль шрифта*/
+/*font-family: 'Roboto', sans-serif;*/ /* это шрифт гугла*/
+
+
+}
+
+
+/*.avatar и другие... это классы которые были созданы в аштимл*/
+
+
+
+.avatar {
+    /*для id #, для class это . перед названием, при этом class могут повторяться в файле html, тогда как id должен быть уникальным*/ 
+    width: 600px;  /*размер картинки*/
+    border-radius: 30px; /*округление,можно указывать в %, где 50% - это круг*/
+
+    box-shadow: 4px 4px 14px rgba(139, 69, 19); /*тень, 
+    px это направление тени, можно определить на сайте посмотрев код элемента 
+    у   box-shadow нажав два листа,
+    в скобочках указан цвет, можно посмотреть в таблице цветов лдля CSS*/
+}
+
+.podcerkivanie {
+    text-decoration: underline;
+}
+
+.info h1 { background:#dad0c5;
+    text-align: center;
+     border-radius: 30px;
+    color: #3f3083;
+    font-family: 'Comfortaa', cursive;
+    
+
+    }
+
+    .levo {
+        background:#dabf9d; 
+        border-radius: 30px;}
+    .pravo {border-radius: 30px;
+        background:#dabf9d; }
+
+.info p {
+   
+    color: #8b4513;
+    background:#dabf9d; 
+    margin: 0; /* это отменяет все отступы*/
+    font-style: italic; /* это сделала текст с наклоном*/
+    /*font-weight: bold; это жирность, можно цифрами выставить*/
+
+    text-decoration: none;/*underline нижнее подчеркевание*/
+
+   /* text-transform: lowercase; все слова маленькими буквами
+    text-transform: capitalize; все слова с заглавной буквы
+    text-transform: uppercase; все слова большими буквами
+  
+    word-spacing: 42px; величина пробела между словами
+    letter-spacing: 5px; /* величина пробела между буквами*/
+
+border-radius: 30px;
+text-align: center;
+}
+
+
+
+
+
+.bulochka {
+background:#f8c6c2; 
+padding: 20px;
+border-radius: 30px;
+/*
+padding: 20px 40px; 
+Когда указываем только 2 значения то:
+20 верх низ, 40 право лево
+Это относится и к маргин и к бордер
+
+padding: 5px 10px 15px 25px; 
+Когда указываем все 4 ТО порядок такой: 
+верх право низ лево
+Это относится и к маргин и к бордер
+
+Можно прописать каждую сторону отдельно:
+padding-top: 5px;
+padding-right: 10px;
+padding-bottom: 15px;
+padding-left: 25px; ТО же самое толлько расписано где какая сторона, разницы никакой*/
+
+border: 5px solid #f7f7f7; /* solid это стиль границы*/
+
+/*
+Style бордера
+Можно каждую сторону сделать разной*/
+
+
+/*border-bottom-style: dotted;
+border-top-style: dotted;
+border-left-style: dotted;
+border-right-style: dotted; 
+
+где dotted это пунктир
+*/
+
+/* Либо весь стиль бордера
+border-style: double;*/
+
+/*
+можно так же сделать стороны разными цветами, например
+border-bottom-color: #8b4513;*/
+margin: 20px;
+
+
+}
+
+.bulochka h2 {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 30px;
+
+}
+
+.spisokTochka {
+    list-style: url(5cb84e_73ed7fbeb3f143de8ae415b909175b63.png);
+    line-height: 30px; /*Это высота строки, не символов. Можно регулировать расстояние между строками*/
+}
+
+.textPoCentry {
+    text-align: center;
+}
+
+#kkkk {
+    text-align: center
+}
+
+.vse {
+   max-width: 700px;/*
+    контент занимает не более 700 пикселей, но возможно менее, подстроится под устройство*/
+/*width: 80%; /*контент занимает 80% пространства на странице*/
+
+margin: auto; /*весь контент по центру раскрытой страницы*/
+
+}
+
+
+
+
+
+
+a {
+    color: #9c1212;
+    text-decoration: none;/*убираю этим подчеркивание*/
+}
+
+a:hover {/*когда наводят курсор*/
+    text-decoration: underline;
+}
+
+a:active {/*когда нажали*/
+    color: #0e0e09;
+
+}
+
+a:visited{/*когда уже посетили ссылку*/
+    color: #d4aaaa;
+
+}
+
+/*.fall div {}
+ это означает что сам блок не стилизуется но стилизуются абсолютно ВСЕ дивы 
+которые есть в нём*/ 
+
+/*.fall > div {/* в таком случае стилизуются только дочерние дивы,
+    т е  если в этих дивах есть ещё дивы, они не стилизуются
+   float: left; ВСЁ по левому краю
+   background:#5ab679 ;
+   height: 80px; высота
+   width:  25%; ширина
+   border: 2px solid #FFB6C1; рамка
+    box-sizing: border-box; 
+   тогда учитывает и border для ширины, т.е. размер bordera включается в width}*/
+
+   .spisok {
+/*ПО умолчанию у списков есть padding-left 40px, убрать его: padding:0px; */
+padding-left: 35px;
+/*list-style: none ; Настраивает список кружочки латинские греческие буквы и тд, none убирает список даже если он был в html*/
+
+   }
+
+   .spisok li {
+    margin-bottom: 5px;
+    /*border: 1px solid rgb(157, 30, 189); Рамка
+    border-bottom: 5px solid rgb(157, 30, 189); Подчёркивание
+*/
+    
+
+   }
+
+   .table {
+       width: 100%;
+       text-align: center;
+       
+      
+       
+
+   }
+
+   .table td {
+       /*margin-bottom: 10px; Это не работает*/
+       /*padding-bottom: 10 px; Почему не работает??*/
+       color: #463717;
+
+   }
+
+   /*.table td:nth-child(2), .table td:nth-child(3) {да-да, можно несколько классов сюда впихнуть
+Это ПСЕВДО-СЕЛЛЕКТОР в скобочках мы указываем к какой строчке(ДОЧКЕ) по порядку надо обратится
+color: #056142;
+   }*/
+
+  
+   .table tr:nth-child(even){/*even-четные*/
+       background: #59e4c1;
+   }
+
+    .table tr:nth-child(odd){/*НЕчётные*/
+    background: #9cf8e1;
+
+    }
+
+    .table tr:nth-child(1){
+        font-weight: 700;
+        
+    }
+    .progulka {
+        background-color: #c0f3d1;
+        padding: 50px;
+        border-radius: 30px;
+        margin-bottom: 30px;
+        color: #181d19;
+    }
+
+    .progulka h2 {
+        font-family: 'Comfortaa', cursive;
+       }
+    .spisokprogulka {
+    
+        padding: 0;
+    
+    }
+
+    .vnutriProgulki {
+        font-family: 'Playfair Display', serif;
+        font-size: 17px;
+        color: #181d19;
+      
+        
+    }
+    .vnutriProgulki h4 {
+        font-size: 20px;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .obratnayaSvyaz h2 {
+        font-family: 'Comfortaa', cursive;
+        color: #131214;
+        text-align: right;
+        
+    }
+
+.konfucii {
+text-align: center;
+
+width: 80%;
+background-color: #f1f0af;
+padding: 10%;
+color: #1b1b1a;
+border-radius: 30px;
+display: flex;
+
+}
+
+@media (max-width: 700px) {
+
+.konfucii {
+        display: block;
+        text-align: center;}
+    
+}
+
+/*Такие вышеуказанные правила лучше писать 
+непосредственно после команды которую надо исправить*/
+
+/* У МЕНЯ ДАННОЕ ПРАВИЛО НЕ РАБОТАЕТ НАДО РАЗБИРАТЬСЯ ЧТО ТО
+ПОСТАВИЛА В ШИРИНЕ, НЕ СУЖАЕТСЯ ОКНО В БРАУЗЕРЕ*/
+
+/*Вышенаписанное означает что при сужении экрана меньше чем на 700рх
+ примененный ранее display: flex отменяется*/
+
+.konfucii p {
+    padding-left: 30px;
+
+}
+
+.confF {
+    padding-top: 35px;
+}
+
+.confFoto {
+    box-shadow: -18px 19px 1px 0px #5f615d;
+    
+    
+    
+   
+}
+
+.konfuci {
+    text-align: right;
+
+}
+
+
+
+    .obratnayaSvyaz {
+        background-color: #d5cff0;
+        border-radius: 30px;
+        padding: 30px;
+       
+        
+    }
+
+
+    /*span - это элемент HTML как div только строчный контейнер, 
+    он задействован по умолчанию в label, чтобы его убрать нужно поставить 
+    display: block в CSS*/
+
+    .formaSvyazy label {
+        display: block;
+        font-size: 16px;
+        color: #131214;
+        margin-top: 12px;
+        margin-bottom: 7px;
+
+    }
+
+    .formaSvyazy input,
+    .formaSvyazy  textarea {
+        width: 80%;
+        border: none;
+
+        box-sizing: border-box; /*Свойства width и height включают в 
+        себя значения полей и границ, но не отступов (margin). Эта 
+        модель используется браузером Internet Exporer в режиме 
+        несовместимости.*/
+
+       /* background: transparent; Делает поля прозрачными и они 
+       становятся того же цвета, что и background-color*/
+
+       /*border-bottom: 1px solid red; После того как убрали бордеры НОНом
+       можно задать их чтобы была таблица или линия или что у тебя там*/
+
+       padding: 15px 10px 10px; /*Размеры полей. Верх, По бокам, Низ */
+
+       color: #131214;
+
+       outline: none; /* По умолчанию есть граница когда нажимаешь на поле, 
+       обнуляем её*/
+
+       font-family: 'Comfortaa', cursive;
+    }
+
+ /* .vseFormiSvyazy {
+   display: flex; Элементы находятся на одной строчке, а место ввода уже под ними
+   display: none; визуально убираем элементы из документа 
+}*/
+
+/* .vseFormiSvyazy > .formaSvyazy {
+ width: 50%;
+} */
+
+/*
+.vseFormiSvyazy > .formaSvyazy:first-child {
+margin-right: 50px;
+margin-left: 50px;
+}
+:first-child - это обращение к первому из дивов
+:last-child - соответственно к последнему
+*/
+
+.dzps {
+    background-color: #49375c;
+    border: none;
+    padding: 10px;
+    margin-top: 12px;
+    color: #f5f4fa;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer; /*при наведении на кнопку курсор меняется на руку с пальцем*/
+    
+}
+
+.dzps:hover { 
+    opacity: 0.5; /*тускнеет при навидении курсора на кнопку где 1 это не 
+    меняет цвет, а 0,00001 прозрачный */
+}
+
+.position {
+    /*border: 4px solid #104179;*/
+    margin-top: 50px;
+    padding: 20px;
+    position: relative;
+    height: 300px;
+
+}
+
+/*.box {
+position: static; По умолчанию у каждого элемента позиция статик
+
+
+    width: 50px;
+height: 50px;
+background-color: #84b6f0;
+
+position: absolute; /* При таком свойстве див position уже не видит 
+что в нем есть блок (див) box и игнорирует его, не загоняя элементы в себя
+тем не менее они начинаются там где должны
+Но дальше можно применять топ боттом лефт райт для перемещения 
+по всей странице т е привязки к блоку больше нет
+
+top: 60px;
+left: 100px;
+
+
+если мы хотим чтобы этот элемент позиционировался относительно 
+родительского блока (.position) тогда необходимо туда добавить
+ position: relative;, тогда все указания топ боттом райт лефт
+ будут отсчитываться относительно родительского блока
+
+top: 0;
+right: 0;
+}
+*/
+
+.box {
+
+
+    width: 50px;
+height: 50px;
+background-color: #84b6f0;
+position: fixed;
+
+/*fixed фиксирует блок на экране, ему нужны координаты (топ райт и тд)
+и при прокрутки страници он не двигается оставаясь на месте*/
+
+/*Круглая кнопка снизу:*/
+border-radius: 50%;
+bottom: 20px;
+right: 20px;
+
+
+/*Список например для соцсетей слева:
+left: 0;
+bottom: 50%;
+*/
+
+/*Навигация на сайте: 
+top: 0;
+left: 0;
+width: 100%;
+*/
+}
+
+
+
